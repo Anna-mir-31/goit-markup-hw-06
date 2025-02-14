@@ -220,7 +220,7 @@ img {
   visibility: hidden;
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu.is-open {
@@ -238,7 +238,7 @@ img {
 }
 
 .mobile-menu-close {
- position: absolute;
+  position: absolute;
   top: 24px;
   right: 24px;
   width: 24px;
@@ -278,7 +278,7 @@ img {
 .mobile-link:hover,
 .mobile-link:focus,
 .mobile-link:active {
-  color: #4D5AE5;
+  color: #4d5ae5;
 }
 
 .mobile-contact-info {
@@ -299,23 +299,21 @@ img {
   display: block;
   color: #434455;
   font-weight: 500;
-font-size: 20px;
-line-height: 120%;
-letter-spacing: 0.02em;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-contact-link:hover,
 .mobile-contact-link:focus {
-  color: #4D5AE5;
+  color: #4d5ae5;
 }
-
 
 .social-list {
   display: flex;
   justify-content: center;
   gap: 40px;
 }
-
 
 @media screen and (min-width: 768px) {
   .mobile-menu {
@@ -907,7 +905,7 @@ letter-spacing: 0.02em;
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  margin-right: 80px;
+  
 }
 
 .footer-social-title {
@@ -966,6 +964,7 @@ letter-spacing: 0.02em;
   display: flex;
   flex-direction: column;
   align-items: baseline;
+  margin-left: 80px;
 }
 
 .footer-subscribe-title {
@@ -1031,7 +1030,7 @@ letter-spacing: 0.02em;
 
 /* 📱 Мобильная версия (до 767px) */
 @media screen and (max-width: 767px) {
-  .footer { 
+  .footer {
     max-height: 664px;
   }
   .footer-container {
@@ -1058,6 +1057,7 @@ letter-spacing: 0.02em;
 
   .footer-subscribe {
     align-items: center;
+    margin: 0 auto;
   }
 
   .footer-subscribe-form {
@@ -1075,16 +1075,13 @@ letter-spacing: 0.02em;
 
 /* 📱 Планшетная версия (768px - 1157px) */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
-  .footer { 
+  .footer {
     max-height: 456px;
   }
   .footer-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    padding: 0 32px;
+    padding: 0 108px;
   }
 
   .footer-left {
@@ -1110,6 +1107,7 @@ letter-spacing: 0.02em;
     flex-direction: column;
     align-items: flex-start;
     max-width: 400px;
+    margin: 0%;
   }
 
   .footer-subscribe-form {
@@ -1134,11 +1132,16 @@ letter-spacing: 0.02em;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-left: 12px;
   }
 
   .footer-subscribe-button:hover {
     background-color: #31d0aa;
+  }
+  .label-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
   }
 }
 /* --- Базовые стили для модального окна (десктоп) --- */
@@ -1167,7 +1170,7 @@ letter-spacing: 0.02em;
 }
 /* --- Базовые стили для модального окна (десктоп) --- */
 .modal-content {
- position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1184,6 +1187,9 @@ letter-spacing: 0.02em;
 .modal-content:not(.is-open) .modal {
   transform: translate(-50%, -100%);
 }
+.checkmark-privacy {
+    margin-left: 8px;
+  }
 
 /* --- Адаптация для планшетов --- */
 @media screen and (max-width: 768px) {
@@ -1192,36 +1198,56 @@ letter-spacing: 0.02em;
     min-height: 500px;
     padding: 56px 16px 16px;
   }
+  .checkmark-privacy {
+    margin-left: 8px;
+  }
 }
 
 /* --- Адаптация для мобильных устройств --- */
 @media screen and (max-width: 480px) {
   .modal-content {
-   max-width: 288px;
-    min-height: auto;
-    padding: 40px 12px 16px;
+    max-width: 288px;
   }
-  .modal-title {
-    font-size: 14px;
-    margin-bottom: 12px;
-    margin-top: 24px;
+   .chekbox-container {
+    display: flex;
+    align-items: center; 
+    gap: 8px;
+    flex-wrap: nowrap; 
+    flex-shrink: 0;
+  
   }
-  .modal-input,
-  .modal-textarea {
+
+  .modal-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     font-size: 12px;
-    padding-left: 12px;
+    line-height: 1.4;
+    flex-wrap: wrap;
   }
-  .modal-submit {
-    height: 48px;
-    font-size: 14px;
+
+  .checkmark {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-shrink: 0;
   }
-  .chekbox-container {
-  display: flex;
-  align-items: flex-start; 
-  gap: 8px; 
-  flex-wrap: wrap;
+
+  .checkmark-privacy {
+    font-size: 12px;
+    line-height: 1.2;
+    max-width: 220px; 
+    margin: 0;
   }
- 
+
+  .privacy-policy {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap; 
+  }
 }
 
 /* --- Кнопка закрытия --- */
@@ -1384,7 +1410,6 @@ letter-spacing: 0.02em;
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: transparent;
-  margin-right: 8px;
 }
 
 /* --- Иконка галочки внутри чекбокса --- */
