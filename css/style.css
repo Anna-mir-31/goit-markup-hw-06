@@ -1091,7 +1091,7 @@ img {
   .footer-social {
     display: flex;
     flex-direction: column;
-
+margin-left: 24px;
     justify-content: center;
   }
 
