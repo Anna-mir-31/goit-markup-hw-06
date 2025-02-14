@@ -905,7 +905,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  
 }
 
 .footer-social-title {
@@ -1188,8 +1187,9 @@ img {
   transform: translate(-50%, -100%);
 }
 .checkmark-privacy {
-    margin-left: 8px;
-  }
+  margin-left: 8px;
+  
+}
 
 /* --- Адаптация для планшетов --- */
 @media screen and (max-width: 768px) {
@@ -1208,13 +1208,12 @@ img {
   .modal-content {
     max-width: 288px;
   }
-   .chekbox-container {
+  .chekbox-container {
     display: flex;
-    align-items: center; 
+    align-items: center;
     gap: 8px;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
     flex-shrink: 0;
-  
   }
 
   .modal-checkbox {
@@ -1237,16 +1236,18 @@ img {
 
   .checkmark-privacy {
     font-size: 12px;
-    line-height: 1.2;
-    max-width: 220px; 
+    line-height: 117%;
+    letter-spacing: 0.03em;
     margin: 0;
+    width: 231px;
+   
   }
 
   .privacy-policy {
     color: #4a90e2;
     text-decoration: none;
     font-weight: bold;
-    white-space: nowrap; 
+    white-space: nowrap;
   }
 }
 
@@ -1387,6 +1388,7 @@ img {
   gap: 8px;
   position: relative;
   flex-wrap: wrap;
+  
 }
 /* --- Скрытие стандартного чекбокса --- */
 .modal-checkbox input {
