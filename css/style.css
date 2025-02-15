@@ -232,6 +232,7 @@ img {
 .mobile-menu-container {
   padding-left: 16px;
   padding-top: 72px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -256,7 +257,7 @@ img {
 }
 
 .mobile-menu-nav {
-  margin-bottom: auto;
+  margin: 0;
 }
 
 .mobile-nav-list {
@@ -322,9 +323,6 @@ img {
 }
 /*sections*/
 .banner {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: #2e2f42;
   background-repeat: no-repeat;
   background-size: cover;
@@ -396,6 +394,8 @@ img {
   text-align: center;
   color: #fff;
   margin-top: 72px;
+  padding-left: 52px;
+  padding-right: 52px;
   padding-bottom: 72px;
   min-width: 216px;
   margin: 0 auto;
@@ -412,7 +412,8 @@ img {
     color: #fff;
     margin-top: 112px;
     padding-bottom: 36px;
-    max-width: 496px;
+    padding-left: 120px;
+    padding-right: 120px;
     margin: 0 auto;
   }
 }
@@ -427,9 +428,10 @@ img {
     text-align: center;
     color: #fff;
     margin-top: 188px;
-    padding-bottom: 48px;
     max-width: 496px;
     margin: 0 auto;
+    padding: 0%;
+    padding-bottom: 48px;
   }
 }
 
@@ -697,7 +699,7 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 72px 24px;
+    gap: 64px 24px;
   }
 
   .team-item {
@@ -827,7 +829,7 @@ img {
 /* Планшетная версия (2 карточки в ряд) */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .portfolio-list {
-    gap: 24px;
+    gap: 72px 24px;
   }
 
   .portfolio-item {
@@ -841,7 +843,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 48px;
     width: 100%;
   }
 
@@ -857,7 +859,6 @@ img {
   padding: 100px 0;
   text-align: left;
   color: #ffffff;
-  max-height: 312px;
 }
 
 .footer-container {
@@ -870,7 +871,6 @@ img {
 
 .footer-left {
   margin-right: 120px;
-  margin-bottom: 72px;
 }
 
 .footer-logo {
@@ -1029,9 +1029,6 @@ img {
 
 /* 📱 Мобильная версия (до 767px) */
 @media screen and (max-width: 767px) {
-  .footer {
-    max-height: 664px;
-  }
   .footer-container {
     flex-direction: column;
     align-items: center;
@@ -1046,7 +1043,6 @@ img {
 
   .footer-social {
     margin-right: 0;
-    margin-bottom: 72px;
     align-items: center;
   }
 
@@ -1066,6 +1062,9 @@ img {
     width: 100%;
     gap: 16px;
   }
+  .footer-subscribe-title {
+    margin-top: 72px;
+  }
 
   .footer-subscribe-button {
     width: 165px;
@@ -1074,9 +1073,6 @@ img {
 
 /* 📱 Планшетная версия (768px - 1157px) */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
-  .footer {
-    max-height: 456px;
-  }
   .footer-container {
     display: flex;
     flex-wrap: wrap;
@@ -1091,7 +1087,7 @@ img {
   .footer-social {
     display: flex;
     flex-direction: column;
-margin-left: 24px;
+    margin-left: 24px;
     justify-content: center;
   }
 
@@ -1105,8 +1101,8 @@ margin-left: 24px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 400px;
     margin: 0%;
+    margin-top: 72px;
   }
 
   .footer-subscribe-form {
@@ -1188,7 +1184,6 @@ margin-left: 24px;
 }
 .checkmark-privacy {
   margin-left: 8px;
-  
 }
 
 /* --- Адаптация для планшетов --- */
@@ -1240,7 +1235,6 @@ margin-left: 24px;
     letter-spacing: 0.03em;
     margin: 0;
     width: 231px;
-   
   }
 
   .privacy-policy {
@@ -1388,7 +1382,6 @@ margin-left: 24px;
   gap: 8px;
   position: relative;
   flex-wrap: wrap;
-  
 }
 /* --- Скрытие стандартного чекбокса --- */
 .modal-checkbox input {
