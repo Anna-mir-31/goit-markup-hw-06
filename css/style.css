@@ -1060,9 +1060,8 @@ img {
   }
 
   .footer-social {
-    margin-right: 0;
     align-items: center;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
   }
 
   .footer-social-list {
